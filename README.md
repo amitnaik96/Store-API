@@ -86,14 +86,6 @@ Routes that require a body(POST)
         "password" : "your-password"
     }
 ```
- **Signin a User**
-```bash
-    POST /api/v1/user/signin
-    body : {
-        "email" : "your-email",
-        "password" : "your-password"
-    }
-```
  **Authentication**
 ```bash
     POST /api/v1/user/signin
