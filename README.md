@@ -16,6 +16,8 @@ A modern serverless Store API for e-commerce, optimized with Hono, Prisma, and C
 - **Hosting**: Cloudflare Workers
 - **Authentication**: JWT
 
+![Architecture](https://github.com/amitnaik96/Store-API/blob/master/Design.png)  
+
 ## **API Endpoints**  
 Below are the available API endpoints for Store:
 
@@ -76,6 +78,11 @@ Some more API endpoints will be added soon.
 ## **API Documentation** 
 
  **Register a User**
- ```http
-        GET /api/v1/order
+```http
+    POST /api/v1/user/signin
+    body : {
+        "name" : "your-name",
+        "email" : "your-email",
+        "password" : "your-password"
+    }
 ```
