@@ -76,13 +76,62 @@ Some more API endpoints will be added soon.
 ```
 
 ## **API Documentation** 
-
+Routes that require a body(POST)
  **Register a User**
 ```bash
-    POST /api/v1/user/signin
+    POST /api/v1/user/signup
     body : {
         "name" : "your-name",
         "email" : "your-email",
         "password" : "your-password"
     }
 ```
+ **Signin a User**
+```bash
+    POST /api/v1/user/signin
+    body : {
+        "email" : "your-email",
+        "password" : "your-password"
+    }
+```
+ **Authentication**
+```bash
+    POST /api/v1/user/signin
+    body : {
+        "email" : "your-email",
+        "password" : "your-password"
+    }
+```
+
+**Authorization Header(Below routes can only be accessed authorized!)**
+```bash
+    Authorization: Bearer <your_jwt_token>
+```
+
+ **Add a product**
+```bash
+    POST /api/v1/product
+    body : {
+        "name": "product-name",
+        "price": 10.0,
+        "stock" : 100
+    }
+```
+ **Add product to cart**
+```bash
+    POST /api/v1/cart/add-product
+    body : {
+        "productId" : "your-product-id",
+        "quantity" : 20
+    }
+```
+ **Update order status**
+```bash
+    POST /api/v1/order/status
+    body : {
+        "status" : "PENDING/SHIPPED/DELIVERED/CANCELLED"
+    }
+```
+
+## License
+Distributed under the [MIT](https://github.com/amitnaik96/Store-API/blob/master/LICENSE) License .
