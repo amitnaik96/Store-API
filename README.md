@@ -4,10 +4,10 @@
 A modern serverless Store API for e-commerce, optimized with Hono, Prisma, and Cloudflare Workers
 
 ## **Features**
-- **User Authentication** - Signup & JWT-based Login  
-- **Cart Management** - Add Products, View Cart  
-- **Order Processing** - Place Order with Existing Cart, View Orders  
-- **Product Listing** - Fetch, Add Products
+**User Authentication** - Signup & JWT-based Login  
+**Cart Management** - Add Products, View Cart  
+**Order Processing** - Place Order with Existing Cart, View Orders  
+**Product Listing** - Fetch, Add Products  
 
 ## **Tech Stack**
 - **Backend**: Hono (Fast, Edge-ready framework)
@@ -36,7 +36,7 @@ Below are the available API endpoints for Store:
 | `GET`  | `/api/v1/order`   | Fetch your orders |
 | `POST`  | `/api/v1/order/status`   | Update order status |
 
-Some more API endpoints will be added soon.
+Some more API endpoints will be added soon.  
 
 ## **Setup Instructions** 
 ### **1. Clone the Repository**  
@@ -76,7 +76,7 @@ Some more API endpoints will be added soon.
 ```
 
 ## **API Documentation** 
-Routes that require a body(POST)
+Routes that require a body(POST)  
  **Register a User**
 ```bash
     POST /api/v1/user/signup
