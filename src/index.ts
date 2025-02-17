@@ -12,7 +12,10 @@ const app = new Hono<{
 }>();
 
 app.get('/', (c) => {
-  return c.text('Store API developed by Amit');
+  return c.json({
+    message : 'Store API developed by Amit',
+    documentation : 'https://github.com/amitnaik96/Store-API/blob/master/README.md'
+  });
 })
 
 app.route('/api/v1/user', userRouter);
