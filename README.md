@@ -78,7 +78,7 @@ Some more API endpoints will be added soon.
 ## **API Documentation** 
 
  **Register a User**
-```http
+```bash
     POST /api/v1/user/signin
     body : {
         "name" : "your-name",
